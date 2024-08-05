@@ -46,7 +46,7 @@ api/node_modules/
 .frontend/.angular/
 .api/node_modules/
 jspm_packages/
-api/.env
+api/db/.env
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
