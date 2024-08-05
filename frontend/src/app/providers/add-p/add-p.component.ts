@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { IProvider } from 'src/app/model/providers.model';
-import { sampleProviders } from '../providers.data';
 import { ProviderService } from 'src/app/service/provider.service';
 
 @Component({

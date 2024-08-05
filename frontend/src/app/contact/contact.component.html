@@ -5,17 +5,17 @@
       <div class="col-lg-8 text-center">
         <h2 class="mt-0">Let's Get In Touch!</h2>
         <hr class="divider my-4" />
-        <!-- <p class="text-muted mb-5">
+        <p class="text-muted mb-5">
           Ready to start your next project with us? Give us a call or send us an
           email and we will get back to you as soon as possible!
-        </p> -->
+        </p>
       </div>
     </div>
     <div class="row justify-content-center">
       <form #contactForm="ngForm" (ngSubmit)="submit(contactForm)">
         <div class="form-row">
           <div class="col-md-4 mb-3">
-            <label for="validationDefault01">First name</label>
+            <label for="validationDefault01">Firstname</label>
             <span
               class="text-danger"
               *ngIf="
@@ -27,7 +27,7 @@
               type="text"
               #firstname="ngModel"
               class="form-control"
-              name="firstname"
+              name="name"
               id="validationDefault01"
               required
               [value]=""
@@ -35,7 +35,7 @@
             />
           </div>
           <div class="col-md-4 mb-3">
-            <label for="validationDefault02">Last name</label>
+            <label for="validationDefault02">Lastname</label>
             <span
               class="text-danger"
               *ngIf="
@@ -79,7 +79,7 @@
             ngModel
           ></textarea>
         </div>
-        <button class="btn btn-info btn-block" type="submit">
+        <button class="btn btn-primary btn-block" type="submit">
           Submit form
         </button>
       </form>
