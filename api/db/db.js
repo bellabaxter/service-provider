@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
 require("../model/provider.model");
+import 'dotenv/config';
 
-const mongodbUri = "mongodb://127.0.0.1:27017/provider_db";
+//const mongodbUri = "mongodb://127.0.0.1:27017/provider_db";
 
-// const mongodbUri =
-//   "mongodb+srv://mahakchauhan2004:qM4bashkAcRZyIyO@cluster0.xzbvkvg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const mongodbUri =process.env.URI;
 mongoose
   .connect(mongodbUri)
   .then(() => {
@@ -13,3 +13,4 @@ mongoose
   .catch((err) => {
     console.log(err);
   });
+  
